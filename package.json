@@ -1,0 +1,8 @@
+{
+  "name": "Helion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Delayload/Helion.git",
+  "author": "delayload <alexjaworski88@gmail.com>",
+  "license": "MIT"
+}
