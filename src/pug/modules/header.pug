@@ -1,0 +1,8 @@
+mixin navLink(link, name)
+  li
+    a(href=link).nav-link=name
+
+header.header
+  .wrapper
+    ul.nav
+      +navLink('#','1')

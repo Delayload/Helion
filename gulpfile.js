@@ -24,7 +24,9 @@ function clean(cb) {
 function pug2html() {
   return gulp.src('src/pug/*.pug')
     .pipe(plumber())
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true
+    }))
     .pipe(plumber.stop())
     .pipe(gulpif(argv.prod, htmlValidator()))
     .pipe(gulp.dest('src'))
@@ -44,19 +46,11 @@ function script() {
 function styles() {
   return gulp.src('src/styles/styles.scss')
     .pipe(plumber())
-    .pipe(gulpif(!argv.prod, sourcemaps.init()))
     .pipe(scss())
     .pipe(autoprefixer({
       overrideBrowserslist: ["last 4 version"],
       cascade: false
     }))
-    .pipe(gulpif(argv.prod, cleanCSS({
-      debug: true,
-      compatibility: '*'
-    }, details => {
-      console.log(`${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`)
-    })))
-    .pipe(gulpif(!argv.prod, sourcemaps.write()))
     .pipe(gulp.dest('src/css'))
 }
 
