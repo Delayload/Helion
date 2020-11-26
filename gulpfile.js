@@ -72,7 +72,7 @@ function serve(cb) {
   gulp.watch('src/styles/**/*.scss', gulp.series(styles)).on('change', server.reload);
   gulp.watch('src/js/**/*.js', gulp.series(script)).on('change', server.reload);
   gulp.watch('src/pug/**/*.pug', gulp.series(pug2html));
-  gulp.watch('dist/*.html').on('change', server.reload);
+  gulp.watch('src/*.html').on('change', server.reload);
 
   return cb()
 }
