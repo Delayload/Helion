@@ -1,8 +1,32 @@
-mixin navLink(link, name)
-  li
-    a(href=link).nav-link=name
-
 header.header
-  .wrapper
-    ul.nav
-      +navLink('#','1')
+  .wrapper.wrapper--header
+    .header__menu.header-menu
+      .header-menu__logo
+        a.header-menu__logo-link(href="#")
+          img(src="images/logo.svg", alt="Логотип Хелион")
+
+      button(type="button").header-menu__mobile-menu
+
+      nav.header-menu__nav
+        ul.header-menu__nav-list
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link О компании
+            ul
+              li Контакты
+              li Ближайштй офис
+              li Web-терминал
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link Торговля
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link Аналитика
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link Партнерство
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link Бонусы
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link Обучение
+          li.header-menu__nav-item
+            a(href="#").header-menu__nav-link FAQ
+            
+      .header-menu__buttons
+        button(type="button").header-menu__login Войти
