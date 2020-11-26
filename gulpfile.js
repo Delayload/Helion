@@ -15,11 +15,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const server = require('browser-sync').create();
 const ghPages = require('gh-pages');
 
-function fonts() {
-  return gulp.src('src/fonts/**/*.*')
-    .pipe(gulp.dest('dist/fonts'))
-}
-
 function clean(cb) {
   return del('dist').then(() => {
     cb()
@@ -87,6 +82,7 @@ function buildcopy() {
     'src/css/*',
     'src/js/*',
     'src/img/*',
+    'src/fonts/*',
     'src/*.html'
   ], {base: 'src'})
     .pipe(dest('dist'))
@@ -96,7 +92,7 @@ function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './dist'), cb);
 }
 
-const dev = gulp.parallel(pug2html, script, styles, fonts);
+const dev = gulp.parallel(pug2html, script, styles);
 
 exports.deploy = deploy;
 exports.buildcopy = buildcopy;
