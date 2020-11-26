@@ -67,7 +67,7 @@ function styles() {
 
 function serve(cb) {
   server.init({
-    server: 'dist',
+    server: 'src',
     notify: false,
     open: true,
     cors: true
