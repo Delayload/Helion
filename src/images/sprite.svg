@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="cross" viewBox="0 0 28 15">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1016 8.9746L3.11197 0L0.998535 2.10989L9.98424 11.0806L1.12481 19.8923L3.24218 21.9982L12.0977 13.1904L20.7239 21.8022L22.8373 19.6923L14.215 11.0845L23.0043 2.34259L20.8869 0.236633L12.1016 8.9746Z" fill="#D09E70"/>
+  </symbol>
+  <symbol id="menu" viewBox="0 0 24 22">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H28V3H0V0ZM0 6H28V9H0V6ZM28 12H0V15H28V12Z" fill="#D09E70"/>
+  </symbol>
+  <symbol id="menu__list-icon" viewBox="0 0 12 7">
+    <path d="M6 6L5.64645 6.35355L6 6.70711L6.35355 6.35355L6 6ZM10.6464 0.646447L5.64645 5.64645L6.35355 6.35355L11.3536 1.35355L10.6464 0.646447ZM6.35355 5.64645L1.35355 0.646447L0.646447 1.35355L5.64645 6.35355L6.35355 5.64645Z"/>
+  </symbol
+</svg>

@@ -86,7 +86,7 @@ function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './dist'), cb);
 }
 
-const dev = gulp.parallel(pug2html, script, styles);
+const dev = gulp.parallel(pug2html, styles);
 
 exports.deploy = deploy;
 exports.buildcopy = buildcopy;
