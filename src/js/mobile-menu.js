@@ -8,14 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function(event) {
         event.preventDefault();
         this.classList.toggle("nav-link--open");
-        let list = this.nextElementSibling;
-        console.log(list)
-        list.classList.toggle("nav-link__list--open");
+        this.nextElementSibling.classList.toggle("nav-link__list--open");
     });
   });
 
   button.addEventListener('click', function () {
-
       if (menu.classList.contains('mobile-menu--open')) {
           menu.classList.remove('mobile-menu--open');
           button.classList.remove('mobile-menu--open');
