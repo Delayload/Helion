@@ -25,17 +25,30 @@
 }
 
 .header-menu__nav {
-  display: none;
+  display: none;  
+  flex-direction: column;
   order: 3;
   position: absolute;
   top: 64px;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 10;
   width: 100%;
+  background-color: #282a35;
+}
+
+.header-menu__nav-list {
+  flex: 1;
+  overflow: auto;
+}
+
+
+.mobile-menu--open {
+  display: flex;
 }
 
 .mobile-menu__icon-menu,
-.mobile-menu--open,
 .mobile-menu--open .mobile-menu__icon-cross {
   display: block;
 }
@@ -47,8 +60,10 @@
 
 .header-menu__nav-item {
   background: #282a35;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #1a1a1a;
+  &:not(:last-child) {
+    border-bottom: 1px solid #1a1a1a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .header-menu__nav-link {
