@@ -5,3 +5,4 @@ package-lock.json
 node_modules
 yarn-error.log
 debug.log
+.vscode/settings.json
