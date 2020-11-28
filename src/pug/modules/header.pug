@@ -1,97 +1,96 @@
 header.header
-  .wrapper.wrapper--header
-    .header__menu.header-menu
-      .header-menu__logo
-        a.header-menu__logo-link(href="#")
-          img(src="images/logo.svg", alt="Логотип Хелион")
+  .header__menu.header-menu
+    .header-menu__logo
+      a.header-menu__logo-link(href="#")
+        img(src="images/logo.svg", alt="Логотип Хелион")
 
-      button(type="button").header-menu__mobile-menu.mobile-menu
-        svg(width="22" height="22").mobile-menu__icon
-          use(href="images/sprite.svg#menu").mobile-menu__icon-menu
-          use(href="images/sprite.svg#cross").mobile-menu__icon-cross 
-      nav.header-menu__nav
-        ul.header-menu__nav-list
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title О компании
-            ul.nav-link__list
-              li.nav-link__item 
-                a(href="#") Защита средств
-              li.nav-link__item
-                a(href="#") Реквизиты банка
-              li.nav-link__item 
-                a(href="#") Новости компании
-              li.nav-link__item 
-                a(href="#") Награды
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title Торговля
-            ul.nav-link__list
-              li.nav-link__item 
-                a(href="#") Платформа
-              li.nav-link__item
-                a(href="#") Обучение
-              li.nav-link__item 
-                a(href="#") Счета
-              li.nav-link__item 
-                a(href="#") Инструменты
-              li.nav-link__item 
-                a(href="#") Пополнение и вывод
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title Аналитика
-            ul.nav-link__list
-              li.nav-link__item 
-                a(href="#") Обзоры рынка
-              li.nav-link__item
-                a(href="#") Прогнозы
-              li.nav-link__item 
-                a(href="#") Новости рынка
-              li.nav-link__item 
-                a(href="#") Экономический к-рь
-              li.nav-link__item 
-                a(href="#") Дивиденды
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title Партнерство
-            ul.nav-link__list
-              li.nav-link__item 
-                a(href="#") Свободный агент
-              li.nav-link__item
-                a(href="#") Франчайзинг
-              li.nav-link__item 
-                a(href="#") White label
-              li.nav-link__item 
-                a(href="#") Call-центр
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title Бонусы
-            ul.nav-link__list
-              li.nav-link__item 
-                a(href="#") Welcome Bonus
-              li.nav-link__item
-                a(href="#") Test DriveBonus
-              li.nav-link__item 
-                a(href="#") Проценты на счет
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title Обучение
-          li.header-menu__nav-item
-            .header-menu__nav-link.nav-link 
-              svg(width="12" height="7")
-                use(href="images/sprite.svg#menu__list-icon")
-              a(href="#").nav-link__title FAQ
+    button(type="button").header-menu__mobile-menu.mobile-menu
+      svg(width="22" height="22").mobile-menu__icon
+        use(href="images/sprite.svg#menu").mobile-menu__icon-menu
+        use(href="images/sprite.svg#cross").mobile-menu__icon-cross 
+    nav.header-menu__nav
+      ul.header-menu__nav-list
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title О компании
+          ul.nav-link__list
+            li.nav-link__item 
+              a(href="#") Защита средств
+            li.nav-link__item
+              a(href="#") Реквизиты банка
+            li.nav-link__item 
+              a(href="#") Новости компании
+            li.nav-link__item 
+              a(href="#") Награды
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title Торговля
+          ul.nav-link__list
+            li.nav-link__item 
+              a(href="#") Платформа
+            li.nav-link__item
+              a(href="#") Обучение
+            li.nav-link__item 
+              a(href="#") Счета
+            li.nav-link__item 
+              a(href="#") Инструменты
+            li.nav-link__item 
+              a(href="#") Пополнение и вывод
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title Аналитика
+          ul.nav-link__list
+            li.nav-link__item 
+              a(href="#") Обзоры рынка
+            li.nav-link__item
+              a(href="#") Прогнозы
+            li.nav-link__item 
+              a(href="#") Новости рынка
+            li.nav-link__item 
+              a(href="#") Экономический к-рь
+            li.nav-link__item 
+              a(href="#") Дивиденды
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title Партнерство
+          ul.nav-link__list
+            li.nav-link__item 
+              a(href="#") Свободный агент
+            li.nav-link__item
+              a(href="#") Франчайзинг
+            li.nav-link__item 
+              a(href="#") White label
+            li.nav-link__item 
+              a(href="#") Call-центр
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title Бонусы
+          ul.nav-link__list
+            li.nav-link__item 
+              a(href="#") Welcome Bonus
+            li.nav-link__item
+              a(href="#") Test DriveBonus
+            li.nav-link__item 
+              a(href="#") Проценты на счет
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title Обучение
+        li.header-menu__nav-item
+          .header-menu__nav-link.nav-link 
+            svg(width="12" height="7")
+              use(href="images/sprite.svg#menu__list-icon")
+            a(href="#").nav-link__title FAQ
 
-        button(type="button").header-menu__login Войти
+      button(type="button").header-menu__login Войти

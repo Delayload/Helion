@@ -4,78 +4,81 @@ block variables
 
 block content
   main.main
-    h1.header= pageTitle
+    h1.header.visually-hidden= pageTitle
     section.dividends
-      h2.dividends__title Дивиденды и аналитика
-      p.dividends__subtitle Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
-      p.dividends__subtitle Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
-      .dividends__info.dividends-info
-        .dividends-info__block
-          h3.dividends-info__title До выплаты дивиденда осталось:
-          .dividends-info__container
-            p.dividends-info__residue До выплаты дивиденда осталось:
-            span.dividends-info__caption часов
-            span.dividends-info__caption минут
-            span.dividends-info__caption секунд
-            p.dividends-info__text Число выданных разрешений на строительство (май), US 
-        .dividends-info__block
-          h3.dividends-info__title Выплата дивидендов по CFDs
-          .dividends-info__container
-            ul.dividends-info__list
-              li.dividends-info__item
-                p.dividends-info__name #PG / Procter&Gamble
-                p.dividends-info__time 24 : 08 : 37 : 58
-                table.dividends-info__cost
-                  tr.dividends-info__stock
-                    td.dividends-info__key One stock:
-                    td.dividends-info__value $0.717
-                  tr.dividends-info__stock
-                    td.dividends-info__key Payout:
-                    td.dividends-info__value $717
-              li.dividends-info__item
-                p.dividends-info__name #AAPL / Apple Inc.
-                p.dividends-info__time 24 : 08 : 37 : 58
-                table.dividends-info__cost
-                  tr.dividends-info__stock
-                    td.dividends-info__key One stock:
-                    td.dividends-info__value $0.73
-                  tr.dividends-info__stock
-                    td.dividends-info__key Payout:
-                    td.dividends-info__value $730
-              li.dividends-info__item
-                p.dividends-info__name #SBUX / Starbuck Corporation
-                p.dividends-info__time 24 : 08 : 37 : 58
-                table.dividends-info__cost
-                  tr.dividends-info__stock
-                    td.dividends-info__key One stock:
-                    td.dividends-info__value $0.3
-                  tr.dividends-info__stock
-                    td.dividends-info__key Payout:
-                    td.dividends-info__value $300
-      a(href="#").dividends__categories Все Категории
+      .wrap
+        h2.dividends__title Дивиденды и аналитика
+        p.dividends__subtitle Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
+        p.dividends__subtitle Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
+        .dividends__info.dividends-info
+          .dividends-info__block
+            h3.dividends-info__title До выплаты дивиденда осталось:
+            .dividends-info__container
+              p.dividends-info__residue До выплаты дивиденда осталось:
+              span.dividends-info__caption часов
+              span.dividends-info__caption минут
+              span.dividends-info__caption секунд
+              p.dividends-info__text Число выданных разрешений на строительство (май), US 
+          .dividends-info__block
+            h3.dividends-info__title Выплата дивидендов по CFDs
+            .dividends-info__container
+              ul.dividends-info__list
+                li.dividends-info__item
+                  p.dividends-info__name #PG / Procter&Gamble
+                  p.dividends-info__time 24 : 08 : 37 : 58
+                  table.dividends-info__cost
+                    tr.dividends-info__stock
+                      td.dividends-info__key One stock:
+                      td.dividends-info__value $0.717
+                    tr.dividends-info__stock
+                      td.dividends-info__key Payout:
+                      td.dividends-info__value $717
+                li.dividends-info__item
+                  p.dividends-info__name #AAPL / Apple Inc.
+                  p.dividends-info__time 24 : 08 : 37 : 58
+                  table.dividends-info__cost
+                    tr.dividends-info__stock
+                      td.dividends-info__key One stock:
+                      td.dividends-info__value $0.73
+                    tr.dividends-info__stock
+                      td.dividends-info__key Payout:
+                      td.dividends-info__value $730
+                li.dividends-info__item
+                  p.dividends-info__name #SBUX / Starbuck Corporation
+                  p.dividends-info__time 24 : 08 : 37 : 58
+                  table.dividends-info__cost
+                    tr.dividends-info__stock
+                      td.dividends-info__key One stock:
+                      td.dividends-info__value $0.3
+                    tr.dividends-info__stock
+                      td.dividends-info__key Payout:
+                      td.dividends-info__value $300
+        a(href="#").dividends__categories Все Категории
     section.offers
-      h2.offers__title Специальные предложения
-      .offers__sleder
-        ul.offers__sleder-list
-          li.offers__sleder-item.sleder-item
-            p.sleder-item__title Welcome Bonus
-            p.sleder-item__text Приветственный бонус, который автоматически получают новые трейдеры при регистрации и пополнении счета. Спустя несколько транзакций, бонус станет доступным к снятию.
-            p.sleder-item__notice до 100% на счет
-          li.offers__sleder-item.sleder-item
-            p.sleder-item__title Test Drive Bonus
-            p.sleder-item__text Получайте реальные 250$ на торговый счет и оттачивайте свои способности не вкладывая собственных средств! К выводу доступна только та прибыль, которую вы заработали сверх выданной суммы.
-            p.sleder-item__notice 250$ на счет
-          li.offers__sleder-item.sleder-item
-            p.sleder-item__title Welcome Bonus
-            p.sleder-item__text Сохраняйте свои средства от инфляции при помощи счета в иностранной валюте, а так же получайте гарантированную капитализацию на свой торговый счет от 5% до 16% годовых.
-            p.sleder-item__notice до 16% на счет
-        .offers__sleder-pagination
-      a(href="#").offers__details Подробнее
+      .wrap
+        h2.offers__title Специальные предложения
+        .offers__sleder
+          ul.offers__sleder-list
+            li.offers__sleder-item.sleder-item
+              p.sleder-item__title Welcome Bonus
+              p.sleder-item__text Приветственный бонус, который автоматически получают новые трейдеры при регистрации и пополнении счета. Спустя несколько транзакций, бонус станет доступным к снятию.
+              p.sleder-item__notice до 100% на счет
+            li.offers__sleder-item.sleder-item
+              p.sleder-item__title Test Drive Bonus
+              p.sleder-item__text Получайте реальные 250$ на торговый счет и оттачивайте свои способности не вкладывая собственных средств! К выводу доступна только та прибыль, которую вы заработали сверх выданной суммы.
+              p.sleder-item__notice 250$ на счет
+            li.offers__sleder-item.sleder-item
+              p.sleder-item__title Welcome Bonus
+              p.sleder-item__text Сохраняйте свои средства от инфляции при помощи счета в иностранной валюте, а так же получайте гарантированную капитализацию на свой торговый счет от 5% до 16% годовых.
+              p.sleder-item__notice до 16% на счет
+          .offers__sleder-pagination
+        a(href="#").offers__details Подробнее
     section.accounts
-      h2.accounts__title Торговые Счета
-      p.accounts__subtitle Откройте тип счета, подходящий под Ваш стиль торговли
-      .accounts__slider
-        ul.accounts__list
+      .wrap
+        h2.accounts__title Торговые Счета
+        p.accounts__subtitle Откройте тип счета, подходящий под Ваш стиль торговли
+        .accounts__slider
+          ul.accounts__list
           li.accounts__item.accounts-item
             .accounts-item__header
               p.accounts-item__heading Silver
@@ -121,50 +124,54 @@ block content
             p.accounts-item__advantage Защита от отрицательного баланса
             a(href="#").accounts-item__link открыть счет
     section.training
-      h2.training__title Обучение трейдингу
-      p.training__text Самостоятельное изучение торговли на финансовых рынках - всегда процесс очень кропотливый и длительный, который требует от новичка достаточно терпения, выдержки и силы воли. Разумеется, много трейдеров прошли путь самостоятельного обучения трейдингу и сейчас стабильно зарабатывают деньги на финансовых рынках, но зачем тратить столько времени впустую? На дворе XXI век - век высоких информационных технологий, существуют наиболее комфортные  и локаничные методы, которые сэкономят ваше бесценное время и нервы.  
-      .training__img
-        img(src="", alt="")
-      p.training__text Просто подберите для себя подходящий формат обучения: лично в офисе, дистанционно или груповые мастер классы и вебинары - все остальное мы сделаем за вас. Передайте себя в руки профессиональной команды финансовых советников “Helion Capital” и шаг за шагом мы научим вас зарабатывать на финансовых рынках.
-      a(href="#").training__link Подробнее
+      .wrap
+        h2.training__title Обучение трейдингу
+        p.training__text Самостоятельное изучение торговли на финансовых рынках - всегда процесс очень кропотливый и длительный, который требует от новичка достаточно терпения, выдержки и силы воли. Разумеется, много трейдеров прошли путь самостоятельного обучения трейдингу и сейчас стабильно зарабатывают деньги на финансовых рынках, но зачем тратить столько времени впустую? На дворе XXI век - век высоких информационных технологий, существуют наиболее комфортные  и локаничные методы, которые сэкономят ваше бесценное время и нервы.  
+        .training__video
+          img(src="images/training-mobile__background.jpg", alt="training-background").training__video-preview
+          button.training__video-button
+        p.training__text Просто подберите для себя подходящий формат обучения: лично в офисе, дистанционно или груповые мастер классы и вебинары - все остальное мы сделаем за вас. Передайте себя в руки профессиональной команды финансовых советников “Helion Capital” и шаг за шагом мы научим вас зарабатывать на финансовых рынках.
+        a(href="#").training__link Подробнее
     section.news
-      h2.company-news__title Новости рынка
-      ul.company-news__list
-        li.company-news__item
-          article.company-news__item-content.item-content
-            p.item-content__title Официальные лица вогнали EUR...
-            p.item-content__date 12.05.18
-            p.item-content__text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
-            a(href="#").item-content__details Подробнее...
-        li.company-news__item
-          article.company-news__item-content.item-content
-            p.item-content__title Младший брат Bitcoin - перспек...
-            p.item-content__date 12.05.18
-            p.item-content__text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
-            a(href="#").item-content__details Подробнее...
-      a(href="#").company-news__details Больше Новостей
+      .wrap
+        h2.company-news__title Новости рынка
+        ul.company-news__list
+          li.company-news__item
+            article.company-news__item-content.item-content
+              p.item-content__title Официальные лица вогнали EUR...
+              p.item-content__date 12.05.18
+              p.item-content__text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+              a(href="#").item-content__details Подробнее...
+          li.company-news__item
+            article.company-news__item-content.item-content
+              p.item-content__title Младший брат Bitcoin - перспек...
+              p.item-content__date 12.05.18
+              p.item-content__text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+              a(href="#").item-content__details Подробнее...
+        a(href="#").company-news__details Больше Новостей
     section.partners
-      article.partners__banner
-        h2.partners__banner-title
-        .partners__banner-links
-          a(href="#").partners__banner-link
-          a(href="#").partners__banner-link
-      ul.partners__list
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
-        li.partners__item
-          a(href="#").partners__link
-            img(src="", alt="")
+      .wrap
+        article.partners__banner
+          h2.partners__banner-title
+          .partners__banner-links
+            a(href="#").partners__banner-link
+            a(href="#").partners__banner-link
+        ul.partners__list
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
+          li.partners__item
+            a(href="#").partners__link
+              img(src="", alt="")
