@@ -1,0 +1,10 @@
+.title {
+    @include font(26, 30, 500);
+    font-family: $alt-text-font;
+    font-style: DemiBold;
+    color: #43191F;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D09E70;
+    margin-bottom: 20px;
+}
