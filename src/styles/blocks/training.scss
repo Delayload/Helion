@@ -1,0 +1,24 @@
+.training {
+    padding-bottom: 40px;
+}
+
+.training__text {
+    margin-bottom: 20px;
+}
+
+.training__video {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.training__video-button {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  border: none;
+  width: 36px;
+  height: 36px;
+  left: 132px;
+  top: 84px;
+  background: url("../images/training-button.svg");
+}
