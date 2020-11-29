@@ -62,21 +62,24 @@ block content
     section.offers
       .wrap
         h2.offers__title.title Специальные предложения
-        .offers__sleder
-          ul.offers__sleder-list
-            li.offers__sleder-item.sleder-item
-              p.sleder-item__title Welcome Bonus
-              p.sleder-item__text Приветственный бонус, который автоматически получают новые трейдеры при регистрации и пополнении счета. Спустя несколько транзакций, бонус станет доступным к снятию.
-              p.sleder-item__notice до 100% на счет
-            li.offers__sleder-item.sleder-item
-              p.sleder-item__title Test Drive Bonus
-              p.sleder-item__text Получайте реальные 250$ на торговый счет и оттачивайте свои способности не вкладывая собственных средств! К выводу доступна только та прибыль, которую вы заработали сверх выданной суммы.
-              p.sleder-item__notice 250$ на счет
-            li.offers__sleder-item.sleder-item
-              p.sleder-item__title Welcome Bonus
-              p.sleder-item__text Сохраняйте свои средства от инфляции при помощи счета в иностранной валюте, а так же получайте гарантированную капитализацию на свой торговый счет от 5% до 16% годовых.
-              p.sleder-item__notice до 16% на счет
-          .offers__sleder-pagination
+        .offers__slider
+          ul.offers__slider-list
+            li.offers__slider-item.offers-slide
+              p.offers-slide__title Welcome Bonus
+              p.offers-slide__text Приветственный бонус, который автоматически получают новые трейдеры при регистрации и пополнении счета. Спустя несколько транзакций, бонус станет доступным к снятию.
+              p.offers-slide__notice до 100% на счет
+            li.offers__slider-item.offers-slide
+              p.offers-slide__title Test Drive Bonus
+              p.offers-slide__text Получайте реальные 250$ на торговый счет и оттачивайте свои способности не вкладывая собственных средств! К выводу доступна только та прибыль, которую вы заработали сверх выданной суммы.
+              p.offers-slide__notice 250$ на счет
+            li.offers__slider-item.offers-slide
+              p.offers-slide__title Welcome Bonus
+              p.offers-slide__text Сохраняйте свои средства от инфляции при помощи счета в иностранной валюте, а так же получайте гарантированную капитализацию на свой торговый счет от 5% до 16% годовых.
+              p.offers-slide__notice до 16% на счет
+          .offers__slider-pagination.offers-slide__pagination
+            span(aria-label="Перейти к первому слайду").offers-slide__pagination-bullet.offers-slide__pagination-bullet--active
+            span(aria-label="Перейти ко второму слайду").offers-slide__pagination-bullet
+            span(aria-label="Перейти ко третьему слайду").offers-slide__pagination-bullet
         a(href="#").offers__details Подробнее
     section.accounts
       .wrap
