@@ -1,0 +1,89 @@
+.accounts {
+  padding-bottom: 40px;
+}
+
+.accounts__subtitle {
+  @include font(12, 20, 400);
+  font-family: $main-text-font;
+  color: #979797;
+  margin-bottom: 20px;
+}
+
+.accounts-item__header {
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 36px;
+  margin-bottom: 20px;
+}
+
+.accounts-item {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.accounts-item:nth-of-type(1) .accounts-item__header {
+  background: url("../images/silver.png"), linear-gradient(60.67deg, #8D8E92 16.11%, #AFB0B3 87.74%);
+}
+.accounts-item:nth-of-type(2) .accounts-item__header {
+  background: url("../images/gold.png"), linear-gradient(49.72deg, #C39468 23.68%, #EEC88F 94.5%);
+}
+.accounts-item:nth-of-type(3) .accounts-item__header {
+  background: url("../images/platinum.png"), linear-gradient(43.99deg, #B4925F -10.51%, #AC8752 92.71%);
+}
+.accounts-item:nth-of-type(4) .accounts-item__header {
+  background: url("../images/bitcoin.png"), linear-gradient(43.99deg, #A7691D -10.51%, #9F5C0A 92.71%);
+}
+
+.accounts-item__heading {
+  margin-bottom: 20px;
+  @include font(36, 51, 700);
+  font-family: $alt-text-font;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.accounts-item__desc {
+  @include font(14, 20, 400);
+  font-family: $main-text-font;
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.accounts-item__advantage {
+  padding: 15px 0;
+  padding-left: 26px;
+  margin: 0 20px;
+  border-top: 1px solid #C4C4C4;
+  text-align: left;
+  &:last-of-type {
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 20px;
+  }
+  @include font(12, 20, 400);
+  font-family: $main-text-font;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: 12px;
+    top: 22px;
+    background: #D09E70;
+  }
+}
+
+.accounts-item__link {
+  padding: 19px 40px;
+  @include font(16, 19, 400);
+  font-family: $main-text-font;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #2A2A2A;
+  display: inline-block;
+}
+
+.accounts__slider-pagination {
+  margin-bottom: 20px;
+}

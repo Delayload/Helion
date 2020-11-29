@@ -431,3 +431,95 @@ h5 {
   font-weight: 400;
   font-family: "Milio";
   color: #CB9C71; }
+
+.accounts {
+  padding-bottom: 40px; }
+
+.accounts__subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  color: #979797;
+  margin-bottom: 20px; }
+
+.accounts-item__header {
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 36px;
+  margin-bottom: 20px; }
+
+.accounts-item {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.accounts-item:nth-of-type(1) .accounts-item__header {
+  background: url("../images/silver.png"), -o-linear-gradient(29.33deg, #8D8E92 16.11%, #AFB0B3 87.74%);
+  background: url("../images/silver.png"), linear-gradient(60.67deg, #8D8E92 16.11%, #AFB0B3 87.74%); }
+
+.accounts-item:nth-of-type(2) .accounts-item__header {
+  background: url("../images/gold.png"), -o-linear-gradient(40.28deg, #C39468 23.68%, #EEC88F 94.5%);
+  background: url("../images/gold.png"), linear-gradient(49.72deg, #C39468 23.68%, #EEC88F 94.5%); }
+
+.accounts-item:nth-of-type(3) .accounts-item__header {
+  background: url("../images/platinum.png"), -o-linear-gradient(46.01deg, #B4925F -10.51%, #AC8752 92.71%);
+  background: url("../images/platinum.png"), linear-gradient(43.99deg, #B4925F -10.51%, #AC8752 92.71%); }
+
+.accounts-item:nth-of-type(4) .accounts-item__header {
+  background: url("../images/bitcoin.png"), -o-linear-gradient(46.01deg, #A7691D -10.51%, #9F5C0A 92.71%);
+  background: url("../images/bitcoin.png"), linear-gradient(43.99deg, #A7691D -10.51%, #9F5C0A 92.71%); }
+
+.accounts-item__heading {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 700;
+  font-family: "Milio";
+  color: #FFFFFF;
+  text-align: center; }
+
+.accounts-item__desc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  color: #F2F2F2;
+  text-align: center; }
+
+.accounts-item__advantage {
+  padding: 15px 0;
+  padding-left: 26px;
+  margin: 0 20px;
+  border-top: 1px solid #C4C4C4;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  position: relative; }
+  .accounts-item__advantage:last-of-type {
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 20px; }
+  .accounts-item__advantage::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: 12px;
+    top: 22px;
+    background: #D09E70; }
+
+.accounts-item__link {
+  padding: 19px 40px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #2A2A2A;
+  display: inline-block; }
+
+.accounts__slider-pagination {
+  margin-bottom: 20px; }
