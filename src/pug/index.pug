@@ -8,52 +8,57 @@ block content
     section.dividends
       .wrap
         h2.dividends__title.title Дивиденды и аналитика
-        p.dividends__subtitle Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
-        p.dividends__subtitle Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
+        .dividends__text
+          p.dividends__subtitle.text Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
+          p.dividends__subtitle.text Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
         .dividends__info.dividends-info
-          .dividends-info__block
-            h3.dividends-info__title До выплаты дивиденда осталось:
-            .dividends-info__container
-              p.dividends-info__residue До выплаты дивиденда осталось:
-              span.dividends-info__caption часов
-              span.dividends-info__caption минут
-              span.dividends-info__caption секунд
+          .dividends-info__inner
+            .dividends-info__block
+              h3.dividends-info__title До выплаты дивиденда осталось:
+              .dividends-info__container
+                p.dividends-info__residue 00 : 05 : <span>51</span>
+                span.dividends-info__caption часов
+                span.dividends-info__caption минут
+                span.dividends-info__caption секунд
               p.dividends-info__text Число выданных разрешений на строительство (май), US 
-          .dividends-info__block
-            h3.dividends-info__title Выплата дивидендов по CFDs
-            .dividends-info__container
-              ul.dividends-info__list
-                li.dividends-info__item
-                  p.dividends-info__name #PG / Procter&Gamble
-                  p.dividends-info__time 24 : 08 : 37 : 58
-                  table.dividends-info__cost
-                    tr.dividends-info__stock
-                      td.dividends-info__key One stock:
-                      td.dividends-info__value $0.717
-                    tr.dividends-info__stock
-                      td.dividends-info__key Payout:
-                      td.dividends-info__value $717
-                li.dividends-info__item
-                  p.dividends-info__name #AAPL / Apple Inc.
-                  p.dividends-info__time 24 : 08 : 37 : 58
-                  table.dividends-info__cost
-                    tr.dividends-info__stock
-                      td.dividends-info__key One stock:
-                      td.dividends-info__value $0.73
-                    tr.dividends-info__stock
-                      td.dividends-info__key Payout:
-                      td.dividends-info__value $730
-                li.dividends-info__item
-                  p.dividends-info__name #SBUX / Starbuck Corporation
-                  p.dividends-info__time 24 : 08 : 37 : 58
-                  table.dividends-info__cost
-                    tr.dividends-info__stock
-                      td.dividends-info__key One stock:
-                      td.dividends-info__value $0.3
-                    tr.dividends-info__stock
-                      td.dividends-info__key Payout:
-                      td.dividends-info__value $300
-        a(href="#").dividends__categories Все Категории
+            .dividends-info__block
+              h3.dividends-info__title Выплата дивидендов по CFDs
+              .dividends-info__container
+                ul.dividends-info__list
+                  li.dividends-info__item
+                    .dividends-info__wrap
+                      p.dividends-info__name <span>#PG</span> / Procter&Gamble
+                      p.dividends-info__time 24 : 08 : 37 : 58
+                    .dividends-info__cost
+                      .dividends-info__stock
+                        p.dividends-info__key One stock:
+                        p.dividends-info__value $0.717
+                      .dividends-info__stock
+                        p.dividends-info__key Payout:
+                        p.dividends-info__value $717
+                  li.dividends-info__item
+                    .dividends-info__wrap
+                      p.dividends-info__name <span>#AAPL</span> / Apple Inc.
+                      p.dividends-info__time 24 : 08 : 37 : 58
+                    .dividends-info__cost
+                      .dividends-info__stock
+                        p.dividends-info__key One stock:
+                        p.dividends-info__value $0.73
+                      .dividends-info__stock
+                        p.dividends-info__key Payout:
+                        p.dividends-info__value $730
+                  li.dividends-info__item
+                    .dividends-info__wrap
+                      p.dividends-info__name <span>#SBUX</span> / Starbuck Corporation
+                      p.dividends-info__time 24 : 08 : 37 : 58
+                    .dividends-info__cost
+                      .dividends-info__stock
+                        p.dividends-info__key One stock:
+                        p.dividends-info__value $0.3
+                      .dividends-info__stock
+                        p.dividends-info__key Payout:
+                        p.dividends-info__value $300
+          a(href="#").dividends__categories Все Категории
     section.offers
       .wrap
         h2.offers__title.title Специальные предложения

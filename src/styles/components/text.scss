@@ -1,0 +1,5 @@
+.text {
+    @include font(16, 26, 400);
+    font-family: $main-text-font;
+    color: #000000;
+}
