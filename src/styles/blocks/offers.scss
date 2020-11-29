@@ -38,37 +38,3 @@
   font-family: $alt-text-font;
   color: #CB9C71;
 }
-
-.offers-slide__pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.offers-slide__pagination-bullet {
-  width: 6px;
-  height: 6px;
-  background: #535353;
-  border-radius: 100%;
-  cursor: pointer;
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  &--active {
-    background: #D09E70;
-  }
-}
-
-.offers__details {
-  padding: 18px 20px;
-  border: 2px solid #D09E70;
-  width: 100%;
-  display: block;
-  text-align: center;
-  @include font(14, 14, 400);
-  font-family: $main-text-font;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #D09E70;
-}

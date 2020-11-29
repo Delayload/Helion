@@ -1,0 +1,12 @@
+.details {
+  padding: 18px 20px;
+  border: 2px solid #D09E70;
+  width: 100%;
+  display: block;
+  text-align: center;
+  @include font(14, 14, 400);
+  font-family: $main-text-font;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #D09E70;
+}
