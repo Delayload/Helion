@@ -1,0 +1,62 @@
+.market-news {
+  padding-bottom: 40px;
+}
+
+.market-news__list {
+  margin-bottom: 20px;
+}
+
+.market-news__item {
+  padding-left: 70px;
+  position: relative;
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.market-news__item:nth-of-type(1)::before {
+  background: url("../images/market-mobile-1.jpg");
+}
+
+.market-news__item:nth-of-type(2)::before {
+  background: url("../images/market-mobile-2.jpg");
+}
+
+.market-news__item:nth-of-type(3)::before {
+  background: url("../images/market-mobile-3.jpg");
+}
+
+.market-news__item:nth-of-type(4)::before {
+  background: url("../images/market-mobile-4.jpg");
+}
+
+.market-news__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.market-news__head {
+  @include font(18, 21, 400);
+  font-family: $alt-text-font;
+  color: #43191F;
+}
+
+.market-news__date {
+  @include font(12, 20, 400);
+  font-family: $main-text-font;
+  color: #000000;
+}
+
+.market-news__text {
+  @include font(12, 17, 400);
+  font-family: $main-text-font;
+  color: #000000;
+}
