@@ -545,3 +545,68 @@ h5 {
   left: 132px;
   top: 84px;
   background: url("../images/training-button.svg"); }
+
+.company-news {
+  padding-bottom: 60px; }
+
+.company-news__list {
+  margin-bottom: 20px; }
+
+.company-news__item {
+  padding-top: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #E7E7E7; }
+
+.company-news__header {
+  padding-left: 90px;
+  margin-bottom: 14px;
+  position: relative; }
+  .company-news__header::before {
+    position: absolute;
+    content: "";
+    height: 62px;
+    width: 80px;
+    top: 0;
+    left: 0; }
+
+.company-news__item:nth-of-type(1) .company-news__header::before {
+  background: url("../images/news-mobile-1.jpg"); }
+
+.company-news__item:nth-of-type(2) .company-news__header::before {
+  background: url("../images/news-mobile-2.jpg"); }
+
+.company-news__head {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Milio";
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #43191F; }
+
+.company-news__date {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  color: #000000; }
+
+.company-news__desc {
+  position: relative; }
+
+.company-news__text {
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  color: #000000; }
+
+.company-news__more {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  color: #CB9C71;
+  text-align: right;
+  position: absolute;
+  right: 0; }
