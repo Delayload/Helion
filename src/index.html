@@ -8,99 +8,109 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__menu header-menu">
-        <div class="header-menu__logo"><a class="header-menu__logo-link" href="#"><img src="images/logo.svg" alt="Логотип Хелион"/></a></div>
-        <button class="header-menu__mobile-menu mobile-menu" type="button">
-          <svg class="mobile-menu__icon" width="22" height="22">
-            <use class="mobile-menu__icon-menu" href="images/sprite.svg#menu"></use>
-            <use class="mobile-menu__icon-cross" href="images/sprite.svg#cross"> </use>
-          </svg>
-        </button>
-        <nav class="header-menu__nav">
-          <ul class="header-menu__nav-list">
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">О компании</a>
-              </div>
-              <ul class="nav-link__list">
-                <li class="nav-link__item"> <a href="#">Защита средств</a></li>
-                <li class="nav-link__item"><a href="#">Реквизиты банка</a></li>
-                <li class="nav-link__item"> <a href="#">Новости компании</a></li>
-                <li class="nav-link__item"> <a href="#">Награды</a></li>
-              </ul>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">Торговля</a>
-              </div>
-              <ul class="nav-link__list">
-                <li class="nav-link__item"> <a href="#">Платформа</a></li>
-                <li class="nav-link__item"><a href="#">Обучение</a></li>
-                <li class="nav-link__item"> <a href="#">Счета</a></li>
-                <li class="nav-link__item"> <a href="#">Инструменты</a></li>
-                <li class="nav-link__item"> <a href="#">Пополнение и вывод</a></li>
-              </ul>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">Аналитика</a>
-              </div>
-              <ul class="nav-link__list">
-                <li class="nav-link__item"> <a href="#">Обзоры рынка</a></li>
-                <li class="nav-link__item"><a href="#">Прогнозы</a></li>
-                <li class="nav-link__item"> <a href="#">Новости рынка</a></li>
-                <li class="nav-link__item"> <a href="#">Экономический к-рь</a></li>
-                <li class="nav-link__item"> <a href="#">Дивиденды</a></li>
-              </ul>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">Партнерство</a>
-              </div>
-              <ul class="nav-link__list">
-                <li class="nav-link__item"> <a href="#">Свободный агент</a></li>
-                <li class="nav-link__item"><a href="#">Франчайзинг</a></li>
-                <li class="nav-link__item"> <a href="#">White label</a></li>
-                <li class="nav-link__item"> <a href="#">Call-центр</a></li>
-              </ul>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">Бонусы</a>
-              </div>
-              <ul class="nav-link__list">
-                <li class="nav-link__item"> <a href="#">Welcome Bonus</a></li>
-                <li class="nav-link__item"><a href="#">Test DriveBonus</a></li>
-                <li class="nav-link__item"> <a href="#">Проценты на счет</a></li>
-              </ul>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link">
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">Обучение</a>
-              </div>
-            </li>
-            <li class="header-menu__nav-item">
-              <div class="header-menu__nav-link nav-link"> 
-                <svg width="12" height="7">
-                  <use href="images/sprite.svg#menu__list-icon"></use>
-                </svg><a class="nav-link__title" href="#">FAQ</a>
-              </div>
-            </li>
-          </ul>
-          <button class="header-menu__login" type="button">Войти</button>
-        </nav>
+      <div class="wrap wrap--header">
+        <div class="header__menu header-menu">
+          <div class="header-menu__logo"><a class="header-menu__logo-link" href="#"><img src="images/logo.svg" alt="Логотип Хелион"/></a></div>
+          <button class="header-menu__mobile-menu mobile-menu" type="button">
+            <svg class="mobile-menu__icon" width="22" height="22">
+              <use class="mobile-menu__icon-menu" href="images/sprite.svg#menu"></use>
+              <use class="mobile-menu__icon-cross" href="images/sprite.svg#cross"> </use>
+            </svg>
+          </button>
+          <nav class="header-menu__nav menu-nav">
+            <div class="menu-nav__about"><a class="menu-nav__about-item" href="#">Web-терминал</a><a class="menu-nav__about-item" href="#">Контакты</a><a class="menu-nav__about-item" href="#">FAQ</a></div>
+            <div class="menu-nav__auth">
+              <button class="menu-nav__auth-item" type="button">Регистрация</button>
+              <button class="menu-nav__auth-item" type="button">Войти</button>
+            </div><a class="menu-nav__call" href="#">Перезвоните мне</a>
+            <div class="menu-nav__lang">
+              <button class="menu-nav__lang-item menu-nav__lang-item--active" type="button">ru</button>
+              <button class="menu-nav__lang-item" type="button">en</button>
+            </div>
+            <ul class="header-menu__nav-list">
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">О компании</a>
+                </div>
+                <ul class="nav-link__list">
+                  <li class="nav-link__item"> <a href="#">Защита средств</a></li>
+                  <li class="nav-link__item"><a href="#">Реквизиты банка</a></li>
+                  <li class="nav-link__item"> <a href="#">Новости компании</a></li>
+                  <li class="nav-link__item"> <a href="#">Награды</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">Торговля</a>
+                </div>
+                <ul class="nav-link__list">
+                  <li class="nav-link__item"> <a href="#">Платформа</a></li>
+                  <li class="nav-link__item"><a href="#">Обучение</a></li>
+                  <li class="nav-link__item"> <a href="#">Счета</a></li>
+                  <li class="nav-link__item"> <a href="#">Инструменты</a></li>
+                  <li class="nav-link__item"> <a href="#">Пополнение и вывод</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">Аналитика</a>
+                </div>
+                <ul class="nav-link__list">
+                  <li class="nav-link__item"> <a href="#">Обзоры рынка</a></li>
+                  <li class="nav-link__item"><a href="#">Прогнозы</a></li>
+                  <li class="nav-link__item"> <a href="#">Новости рынка</a></li>
+                  <li class="nav-link__item"> <a href="#">Экономический к-рь</a></li>
+                  <li class="nav-link__item"> <a href="#">Дивиденды</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">Партнерство</a>
+                </div>
+                <ul class="nav-link__list">
+                  <li class="nav-link__item"> <a href="#">Свободный агент</a></li>
+                  <li class="nav-link__item"><a href="#">Франчайзинг</a></li>
+                  <li class="nav-link__item"> <a href="#">White label</a></li>
+                  <li class="nav-link__item"> <a href="#">Call-центр</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">Бонусы</a>
+                </div>
+                <ul class="nav-link__list">
+                  <li class="nav-link__item"> <a href="#">Welcome Bonus</a></li>
+                  <li class="nav-link__item"><a href="#">Test DriveBonus</a></li>
+                  <li class="nav-link__item"> <a href="#">Проценты на счет</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link">
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">Обучение</a>
+                </div>
+              </li>
+              <li class="header-menu__nav-item">
+                <div class="header-menu__nav-link nav-link"> 
+                  <svg width="12" height="7">
+                    <use href="images/sprite.svg#menu__list-icon"></use>
+                  </svg><a class="nav-link__title" href="#">FAQ</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main">

@@ -3,3 +3,13 @@
   width: 100%;
   padding: 0 10px;
 }
+
+@media screen and (min-width: 1024px){
+  .wrap {
+    padding: 0;
+  }
+  .wrap--header {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
