@@ -670,3 +670,50 @@ h5 {
   font-weight: 400;
   font-family: "Helvetica";
   color: #000000; }
+
+.partners__banner {
+  padding: 10px;
+  padding-top: 8px;
+  background: url("../images/banner.jpg");
+  margin-bottom: 35px; }
+
+.partners__banner-inner {
+  border: 1px solid #FFFFFF;
+  text-align: center; }
+
+.partners__banner-title {
+  padding-top: 10px;
+  margin-bottom: 18px;
+  font-size: 26px;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Milio";
+  color: #FFFFFF; }
+
+.partners__banner-link {
+  display: block;
+  padding: 18px;
+  margin: 10px;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Helvetica";
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #D09E70;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF; }
+  .partners__banner-link:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF; }
+
+.partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 18px; }
