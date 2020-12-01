@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function(event) {
         event.preventDefault();
         this.classList.toggle("nav-link--open");
-        this.nextElementSibling.classList.toggle("nav-link__list--open");
+        this.nextElementSibling.classList.toggle("submenu--open");
     });
   });
 
