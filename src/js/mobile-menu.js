@@ -7,8 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
   navLink.forEach(function(item){
     item.addEventListener('click', function(event) {
         event.preventDefault();
-        this.classList.toggle("nav-link--open");
-        this.nextElementSibling.classList.toggle("submenu--open");
+        if (this.classList.contains('nav-link--open')) {
+          this.classList.remove("nav-link--open");
+          this.nextElementSibling.classList.remove("submenu--open");
+        }
+        else {
+          navLink.forEach(function(item){
+            if (item.classList.contains('nav-link--open')) {
+              item.classList.remove("nav-link--open");
+              item.nextElementSibling.classList.remove("submenu--open");
+            } 
+          });
+          this.classList.add("nav-link--open");
+          this.nextElementSibling.classList.add("submenu--open");
+        }
     });
   });
 
